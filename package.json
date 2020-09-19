@@ -1,0 +1,51 @@
+{
+  "name": "js-package",
+  "version": "1.0.0",
+  "description": "A simple JS package",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "babel src -d dist --source-maps --ignore **/*.test.js",
+    "test": "jest --coverage",
+    "test:debug": "babel-node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
+    "deploy": "npm publish --access public"
+  },
+  "jest": {
+    "automock": false,
+    "testPathIgnorePatterns": [
+      "node_modules/",
+      "scratch/",
+      "dist/"
+    ]
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist/**"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/some-user/js-package.git"
+  },
+  "keywords": [],
+  "author": "Some User",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/some-user/js-package/issues"
+  },
+  "homepage": "https://github.com/some-user/js-package#readme",
+  "dependencies": {
+    "decode-bmp": "^0.2.1",
+    "fast-png": "^5.0.2",
+    "to-data-view": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "jest-cli": "^26.4.2"
+  }
+}
