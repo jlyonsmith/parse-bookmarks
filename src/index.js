@@ -1,1 +1,1 @@
-export { sample } from "./jsPackage"
+export { parseBookmarks } from "./parseBookmarks"

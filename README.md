@@ -1,3 +1,3 @@
-# JS Package
+# Parse Bookmarks Package
 
-A JS package template for NPM.
+This is a package for parsing Netscape format bookmark files.

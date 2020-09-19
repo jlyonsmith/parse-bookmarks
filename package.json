@@ -1,14 +1,16 @@
 {
-  "name": "parse-bookmarks",
+  "name": "@johnls/parse-bookmarks",
   "version": "1.0.0",
   "description": "A simple JS package",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "babel src -d dist --source-maps --ignore **/*.test.js",
+    "build": "babel src -d dist -D types/index.d.ts --source-maps --ignore **/*.test.js",
     "test": "jest --coverage",
     "test:debug": "babel-node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
-    "deploy": "npm publish --access public"
+    "deploy": "npm publish --access public",
+    "lint:ts": "dtslint"
   },
+  "types": "dist/index.d.ts",
   "jest": {
     "automock": false,
     "testPathIgnorePatterns": [
@@ -26,17 +28,13 @@
     "url": "git+https://github.com/jlyonsmith/parse-bookmarks.git"
   },
   "keywords": [],
-  "author": "Some User",
+  "author": "John Lyon-Smith",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jlyonsmith/parse-bookmarks/issues"
   },
   "homepage": "https://github.com/jlyonsmith/parse-bookmarks#readme",
-  "dependencies": {
-    "decode-bmp": "^0.2.1",
-    "fast-png": "^5.0.2",
-    "to-data-view": "^1.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
@@ -46,6 +44,7 @@
     "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
-    "jest-cli": "^26.4.2"
+    "jest-cli": "^26.4.2",
+    "xmldom": "^0.3.0"
   }
 }
