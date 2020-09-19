@@ -1,5 +1,5 @@
 {
-  "name": "js-package",
+  "name": "parse-bookmarks",
   "version": "1.0.0",
   "description": "A simple JS package",
   "scripts": {
@@ -23,15 +23,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/some-user/js-package.git"
+    "url": "git+https://github.com/jlyonsmith/parse-bookmarks.git"
   },
   "keywords": [],
   "author": "Some User",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/some-user/js-package/issues"
+    "url": "https://github.com/jlyonsmith/parse-bookmarks/issues"
   },
-  "homepage": "https://github.com/some-user/js-package#readme",
+  "homepage": "https://github.com/jlyonsmith/parse-bookmarks#readme",
   "dependencies": {
     "decode-bmp": "^0.2.1",
     "fast-png": "^5.0.2",
