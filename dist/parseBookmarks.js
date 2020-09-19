@@ -81,8 +81,9 @@ function parseBookmarks(html, options = {}) {
             title: (_node$firstChild2 = node.firstChild) === null || _node$firstChild2 === void 0 ? void 0 : _node$firstChild2.textContent,
             type: "bookmark",
             url: getNodeAttributeString(node, "href"),
+            icon: getNodeAttributeString(node, "icon"),
             added: parseInt(getNodeAttributeInt(node, "add_date")),
-            icon: getNodeAttributeString(node, "icon")
+            lastModified: getNodeAttributeInt(node, "last_modified")
           });
           break;
       }

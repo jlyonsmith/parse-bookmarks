@@ -6,6 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.fullVersion = exports.version = void 0;
 const version = "1.0.0";
 exports.version = version;
-const fullVersion = "1.0.0-20200913.0";
+const fullVersion = "1.0.0-20200919.0";
 exports.fullVersion = fullVersion;
 //# sourceMappingURL=version.js.map
